@@ -1,0 +1,13 @@
+@font-face {
+  font-family: 'CodaHeavy';
+  font-style: normal;
+  font-weight: 400;
+  src: url('https://726tech.com/ttf/coda-heavy.ttf')  format('truetype');
+}
+
+@font-face {
+  font-family: 'CourierEx';
+  font-style: normal;
+  font-weight: 400;
+  src: url('https://726tech.com/ttf/courier.ttf')  format('truetype');
+}
