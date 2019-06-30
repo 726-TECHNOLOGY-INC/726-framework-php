@@ -4,8 +4,9 @@
 *******************************************************************************/
 class Page {
     public $sql = "SELECT PAGE.PAGE_ID, PAGE.PAGE_PARENT_ID, PAGE.PAGE_TYPE_ID, 
-                          PAGE.PAGE_CANONICAL, PAGE.PAGE_TITLE, PAGE.PAGE_DESCRIPTION,
-                          PAGE.PAGE_IMGURL, PAGE.PAGE_PRIORITY
+                          PAGE.PAGE_CANONICAL, PAGE.PAGE_TITLE, 
+                          PAGE.PAGE_DESCRIPTION, PAGE.PAGE_IMGURL, 
+                          PAGE.PAGE_PRIORITY
                           FROM PAGE 
                           WHERE PAGE.PAGE_ISACTIVE = 1 AND PAGE.PAGE_ID = :id";
     
