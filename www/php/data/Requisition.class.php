@@ -2,14 +2,15 @@
 /*******************************************************************************
 * COPYRIGHT (C) 726 TECHNOLOGY INC, 2017 - 2019            ALL RIGHTS RESERVED *
 *******************************************************************************/
-class Product {
-    private $sql = "SELECT PRODUCT.PRODUCT_ID, PRODUCT.PRODUCT_KWD, 
-                           PRODUCT.PRODUCT_NAME, PRODUCT.PRODUCT_IMGURL, 
-                           PRODUCT.PRODUCT_DESCRIPTION, 
-                           PRODUCT.PRODUCT_STATUS_ID
-                           FROM PRODUCT 
-                           WHERE PRODUCT.ISACTIVE = 1 
-                           AND PRODUCT.PRODUCT_ID = :id";
+class Requisition {
+    private $sql = "SELECT REQUISITION.REQUISITION_ID, REQUISITION.MEMBER_ID, 
+                           REQUISITION.REQUISITION_DELIVERY_ADDRESS_ID, 
+                           REQUISITION.REQUISITION_BILLING_ADDRESS_ID, 
+                           REQUISITION.REQUISITION_STATUS_ID, 
+                           REQUISITION.REQUISITION_NOTES 
+                           FROM REQUISITION 
+                           WHERE REQUISITION.ISACTIVE = 1 
+                           AND REQUISITION.REQUISITION_ID = :id";
     
     public $data;
     
