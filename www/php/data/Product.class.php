@@ -1,14 +1,14 @@
-<?php 
+<?php
 /*******************************************************************************
 * COPYRIGHT (C) 726 TECHNOLOGY INC, 2017 - 2019            ALL RIGHTS RESERVED *
 *******************************************************************************/
-class Page {
-    private $sql = "SELECT PAGE.PAGE_ID, PAGE.PAGE_PARENT_ID, PAGE.PAGE_TYPE_ID, 
-                           PAGE.PAGE_CANONICAL, PAGE.PAGE_TITLE, 
-                           PAGE.PAGE_DESCRIPTION, PAGE.PAGE_IMGURL, 
-                           PAGE.PAGE_PRIORITY
-                           FROM PAGE 
-                           WHERE PAGE.ISACTIVE = 1 AND PAGE.PAGE_ID = :id";
+class Product {
+    private $sql = "SELECT PRODUCT.PRODUCT_ID, PRODUCT.PRODUCT_KWD, PRODUCT.PRODUCT_NAME, 
+                           PRODUCT.PRODUCT_IMGURL, PRODUCT.PRODUCT_DESCRIPTION, 
+                           PRODUCT.PRODUCT_STATUS_ID
+                           FROM PRODUCT 
+                           WHERE PRODUCT.ISACTIVE = 1 
+                           AND PRODUCT.PRODUCT_ID = :id";
     
     public $data;
     

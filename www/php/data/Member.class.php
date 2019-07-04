@@ -3,16 +3,16 @@
 * COPYRIGHT (C) 726 TECHNOLOGY INC, 2017 - 2019            ALL RIGHTS RESERVED *
 *******************************************************************************/
 class Member {
-    public $sql = "SELECT MEMBER.MEMBER_USERNAME, 
-                          MEMBER.MEMBER_FIRSTNAME, MEMBER.MEMBER_LASTNAME, 
-                          MEMBER.MEMBER_ORGANIZATION, MEMBER.MEMBER_WEBURL, 
-                          MEMBER.MEMBER_EMAIL, MEMBER.MEMBER_PHONE, 
-                          MEMBER.MEMBER_ADDRESS_ID, MEMBER.MEMBER_ISREGISTERED 
-                          FROM MEMBER 
-                          WHERE MEMBER.MEMBER_ISACTIVE = 1 
-                          AND MEMBER.MEMBER_ID = :id";
+    private $sql = "SELECT MEMBER.MEMBER_USERNAME, 
+                           MEMBER.MEMBER_FIRSTNAME, MEMBER.MEMBER_LASTNAME, 
+                           MEMBER.MEMBER_ORGANIZATION, MEMBER.MEMBER_WEBURL, 
+                           MEMBER.MEMBER_EMAIL, MEMBER.MEMBER_PHONE, 
+                           MEMBER.MEMBER_ADDRESS_ID, MEMBER.MEMBER_ISREGISTERED 
+                           FROM MEMBER 
+                           WHERE MEMBER.ISACTIVE = 1 
+                           AND MEMBER.MEMBER_ID = :id";
     
-    public $object;
+    public $data;
     
     public function __construct($id) {
         try {
@@ -21,7 +21,7 @@ class Member {
             $stmt = $conn->prepare($this->sql);
             $stmt->bindValue("id", $id, PDO::PARAM_INT);
             $stmt->execute();
-            $this->object = $stmt->fetch();
+            $this->data = $stmt->fetch();
         } catch (Exception $ex) {
             error_log($ex->getMessage());
         }         
