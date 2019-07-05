@@ -2,6 +2,8 @@
 /*******************************************************************************
 * COPYRIGHT (C) 726 TECHNOLOGY INC, 2017 - 2019            ALL RIGHTS RESERVED *
 *******************************************************************************/
+namespace x726xTECHx\xPHPx\xUIx;
+
 class Phone {
     const PHONE_TEXT = "Call us at 1-800-822-7391";
     const COLOR_TEXT = "#EFC62C";

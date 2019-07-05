@@ -2,6 +2,8 @@
 /*******************************************************************************
 * COPYRIGHT (C) 726 TECHNOLOGY INC, 2017 - 2019            ALL RIGHTS RESERVED *
 *******************************************************************************/
+namespace x726xTECHx\xPHPx\xDATAx;
+
 class Member {
     private $fields = "MEMBER.MEMBER_USERNAME, 
                        MEMBER.MEMBER_FIRSTNAME, MEMBER.MEMBER_LASTNAME, 

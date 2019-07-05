@@ -2,6 +2,8 @@
 /*******************************************************************************
 * COPYRIGHT (C) 726 TECHNOLOGY INC, 2017 - 2019            ALL RIGHTS RESERVED *
 *******************************************************************************/
+namespace x726xTECHx\xPHPx\xDATAx;
+
 class Page {
     public static function getPageById($id) {
         $sql = "SELECT PAGE.PAGE_ID, PAGE.PAGE_PARENT_ID, PAGE.PAGE_TYPE_ID, 

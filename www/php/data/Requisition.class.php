@@ -2,6 +2,8 @@
 /*******************************************************************************
 * COPYRIGHT (C) 726 TECHNOLOGY INC, 2017 - 2019            ALL RIGHTS RESERVED *
 *******************************************************************************/
+namespace x726xTECHx\xPHPx\xDATAx;
+
 class Requisition {
     public static function getRequisitionById($id) {
         $sql = "SELECT REQUISITION.REQUISITION_ID, REQUISITION.MEMBER_ID, 

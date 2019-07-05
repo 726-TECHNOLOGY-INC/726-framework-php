@@ -2,6 +2,8 @@
 /*******************************************************************************
 * COPYRIGHT (C) 726 TECHNOLOGY INC, 2017 - 2019            ALL RIGHTS RESERVED *
 *******************************************************************************/
+namespace x726xTECHx\xPHPx\xDATAx;
+
 class Product {    
     public static function getProductById($id) {
         $sql = "SELECT PRODUCT.PRODUCT_ID, PRODUCT.PRODUCT_KWD, 

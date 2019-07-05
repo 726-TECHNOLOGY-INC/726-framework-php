@@ -2,6 +2,8 @@
 /*******************************************************************************
 * COPYRIGHT (C) 726 TECHNOLOGY INC, 2017 - 2019            ALL RIGHTS RESERVED *
 *******************************************************************************/
+namespace x726xTECHx\xPHPx\xDATAx;
+
 class NavigationArea {
     public static function getAllNavigationAreas() {
         $sql = "SELECT NAVIGATION_AREA_ID, NAVIGATION_AREA_PARENT_ID, 

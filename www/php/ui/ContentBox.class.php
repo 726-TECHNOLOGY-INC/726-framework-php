@@ -2,6 +2,8 @@
 /*******************************************************************************
 * COPYRIGHT (C) 726 TECHNOLOGY INC, 2017 - 2019            ALL RIGHTS RESERVED *
 *******************************************************************************/
+namespace x726xTECHx\xPHPx\xUIx;
+
 class ContentBox {
     const COLOR_BACKGROUND = "#303040";
     const COLOR_BACKGROUND_ALT = "#333";

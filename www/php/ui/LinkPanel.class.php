@@ -2,6 +2,8 @@
 /*******************************************************************************
 * COPYRIGHT (C) 726 TECHNOLOGY INC, 2017 - 2019            ALL RIGHTS RESERVED *
 *******************************************************************************/
+namespace x726xTECHx\xPHPx\xUIx;
+
 class LinkPanel {
     const COLOR_BACKGROUND = "linear-gradient(to bottom right, #202030, #272737, #272737)";
     const COLOR_LINK = "#EFC62C";
