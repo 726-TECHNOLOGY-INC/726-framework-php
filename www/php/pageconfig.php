@@ -19,17 +19,18 @@ class PageConfig {
     public static $ogImageAlt = SITE_NAME;
     public static $requireSnippet = false;
     public static $redirect = false;
+        
+    public static function getFullTitle() {
+        return self::$title . " | " . SITE_NAME;
+    }
     
     public static function getMetaProperties() {
-        return "<meta property=\"og:title\" content=\"" . self::$title . "\" />
+        return "<meta property=\"og:title\" content=\"" . self::getFullTitle() . "\" />
         <meta property=\"og:type\" content=\"website\" />
         <meta property=\"og:image\" content=\"" . self::$ogImage . "\" />
         <meta property=\"og:image:alt\" content=\"" . self::$ogImageAlt . "\" />
         <meta property=\"og:url\" content=\"" . SITE_CANONICAL . self::$link . "\" />
-        <meta property=\"og:description\" content=\"" . self::$description . "\" />\n";
-    }
-    
-    public static function getFullTitle() {
-        return self::$title . " | " . SITE_NAME;
+        <meta property=\"og:description\" content=\"" . self::$description . "\" />
+        <meta property=\"fb:app_id\" content=\"" . FACEBOOK_APP . "\" />\n";
     }
 }
