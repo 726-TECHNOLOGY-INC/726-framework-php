@@ -30,7 +30,6 @@ class PageConfig {
         <meta property=\"og:image\" content=\"" . self::$ogImage . "\" />
         <meta property=\"og:image:alt\" content=\"" . self::$ogImageAlt . "\" />
         <meta property=\"og:url\" content=\"" . SITE_CANONICAL . self::$link . "\" />
-        <meta property=\"og:description\" content=\"" . self::$description . "\" />
-        <meta property=\"fb:app_id\" content=\"" . FACEBOOK_APP . "\" />\n";
+        <meta property=\"og:description\" content=\"" . self::$description . "\" />\n";
     }
 }
