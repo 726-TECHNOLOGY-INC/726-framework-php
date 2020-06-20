@@ -214,6 +214,24 @@ CREATE TABLE `UOM` (
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
+-- Dumping data for table `UOM`
+--
+
+INSERT INTO `UOM` (`UOM_ID`, `UOM_SYM`, `UOM_NAME`, `UOM_IS_METRIC`) VALUES
+(1, 'lb', 'pounds', 0),
+(2, 'g', 'grams', 1),
+(3, 't', 'tons', 0),
+(4, 'oz', 'ounces', 0),
+(5, 'kg', 'kilograms', 1),
+(6, 'm', 'meters', 1),
+(7, 'in', 'inches', 0),
+(8, 'ft', 'feet', 0);
+
+--
+-- Indexes for dumped tables
+--
+
+--
 -- Indexes for table `ADDRESS`
 --
 ALTER TABLE `ADDRESS`
@@ -275,3 +293,5 @@ COMMIT;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+
+

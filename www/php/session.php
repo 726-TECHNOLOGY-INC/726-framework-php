@@ -12,6 +12,7 @@ if (!isset($_SESSION['ip'])) {
 
 if (isset($_SESSION['timeout'])) {
     $duration = time() - $_SESSION['timeout'];
+    
     if ($duration > SITE_SESSION_TIMEOUT) {
         session_unset(); 
         session_destroy();

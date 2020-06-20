@@ -1,6 +1,6 @@
 <?php
 /*******************************************************************************
-* COPYRIGHT (C) 726 TECHNOLOGY INC, 2017 - 2019            ALL RIGHTS RESERVED *
+* COPYRIGHT (C) 726 TECHNOLOGY INC, 2017 - 2020            ALL RIGHTS RESERVED *
 *******************************************************************************/
 const VERSION = "2.12.14";
 const SITE = "726tech.com";
