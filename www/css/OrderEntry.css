@@ -1,0 +1,71 @@
+/*******************************************************************************
+* COPYRIGHT (C) 726 TECHNOLOGY INC, 2017 - 2023            ALL RIGHTS RESERVED *
+*******************************************************************************/
+/* ORDER ENTRY STYLES */
+li { outline: none !important; }
+::-webkit-scrollbar { width: 0; }
+::-webkit-scrollbar-track { background: #eee; border: 1px solid #ccc; }
+::-webkit-scrollbar-thumb { background: #bbb; height: 0; }
+::-webkit-scrollbar-thumb:hover { background: #bbb; }
+
+.autocomplete {
+    position: relative;
+    display: inline-block;
+}
+.autocomplete-items {
+    position: absolute;
+    border: 1px solid #d4d4d4;
+    border-bottom: none;
+    border-top: none;
+    z-index: 99;
+    top: 100%;
+    left: 0.5vw;
+    right: 0;
+    max-height: 40vh;
+    overflow-y: scroll;
+}
+.autocomplete-items div {
+    padding: 10px;
+    cursor: pointer;
+    background-color: #fff;
+    border-bottom: 1px solid #d4d4d4;
+    font-size: 2vh;
+    letter-spacing: 2px;
+}
+/*
+.autocomplete-items > div:nth-child(10) ~ div {
+    display: none;
+}
+*/
+.autocomplete-items div:hover {
+    background-color: lightskyblue;
+}
+.autocomplete-active {
+    background-color: lightskyblue !important;
+    color: #ffffff;
+}
+
+.SliderInput {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 15px;
+    background: #d3d3d3;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+}
+.SliderInput::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 40px;
+    height: 40px;
+    background: lightskyblue;
+    cursor: pointer;
+}
+.SliderInput::-moz-range-thumb {
+    width: 40px;
+    height: 40px;
+    background: lightskyblue;
+    cursor: pointer;
+} 

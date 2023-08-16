@@ -1,0 +1,36 @@
+/*******************************************************************************
+* COPYRIGHT (C) 726 TECHNOLOGY INC, 2017 - 2023            ALL RIGHTS RESERVED *
+*******************************************************************************/
+/* BATCH ENTRY */
+option.invalid { font-style: italic; color: #888; }
+.autocomplete {
+    position: relative;
+    display: inline-block;
+}
+.autocomplete-items {
+    position: absolute;
+    border: 1px solid #d4d4d4;
+    border-bottom: none;
+    border-top: none;
+    z-index: 99;
+    top: 100%;
+    left: 0.5vw;
+    right: 0;
+    max-height: 40vh;
+    overflow-y: scroll;
+}
+.autocomplete-items div {
+    padding: 10px;
+    cursor: pointer;
+    background-color: #fff;
+    border-bottom: 1px solid #d4d4d4;
+    font-size: 2vh;
+    letter-spacing: 2px;
+}
+.autocomplete-items div:hover {
+    background-color: lightskyblue;
+}
+.autocomplete-active {
+    background-color: lightskyblue !important;
+    color: #ffffff;
+}
