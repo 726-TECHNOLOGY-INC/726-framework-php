@@ -1,0 +1,32 @@
+/*******************************************************************************
+* COPYRIGHT (C) 726 TECHNOLOGY INC, 2017 - 2023            ALL RIGHTS RESERVED *
+*******************************************************************************/
+/* DASHBOARD CSS */
+.ListItemOuterWrapper { border: calc(0.25vh + 0.25vw) solid #5552; margin-bottom: 2vh; }
+.ListItemWrapper { color: #fff; display: flex; align-items: center; justify-content: space-between; margin: 0;
+                   background-color: #3333337f; padding: 1vh 1vw; font-size: 1.5vh; }
+@media screen and (min-width: 1100px) and (orientation: landscape) {
+    .ListItemWrapper { font-size: 2vh; }
+}  
+.ColumnSmallLeft { width: 15%; text-align: center; }
+.ColumnMediumLeft { width: 33%; text-align: left; }
+.ColumnMediumLeftText { width: 33%; text-align: left; padding: 0 4vw; }
+.ColumnLargeLeft { width: 47%; text-align: left; }
+.ColumnLargeLeftText { width: 47%; text-align: left; padding: 0 4vw; }
+.ColumnSmallRight { width: 18%; text-align: right; padding-right: 1vw; }
+.SmallSVGIcon { height: 3vh; }
+.SmallSVGIcon.clickable:hover { cursor: pointer; opacity: 1.0; }
+.SmallSVGIcon.clickable.disabled { opacity: 0.5; }
+.SmallSVGIcon.clickable.disabled:hover { cursor: default; }
+.bold { font-weight: bold; }
+.holo { color: #00a1ff55; }
+.fvh25 { font-size: 2.5vh; }
+.mono { font-family: monospace; }
+.mt025 { margin-top: 0.25vh; }
+.DashboardField { display: block; padding: 0 2%; margin-top: 4vh;
+                      box-sizing: border-box; width: 100%; }
+.DashboardField.nopadding { padding: 0; }
+.DashboardInput { width: 100%; padding: 1vh 2vw; box-sizing: border-box;
+                           font-weight: bold; font-size: 2vh; letter-spacing: 3px;
+                           outline: none !important; }  
+.DashboardInput.tall { padding: 3vh 2vw; }
