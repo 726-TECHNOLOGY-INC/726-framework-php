@@ -1,0 +1,33 @@
+/*******************************************************************************
+* COPYRIGHT (C) 726 TECHNOLOGY INC, 2017 - 2023            ALL RIGHTS RESERVED *
+*******************************************************************************/
+/* SCROLL LIST */
+.ScrollWindow { overflow-y: scroll; border: 1px solid #999; background: #fff; margin-top: 3vh; }
+.ScrollList { list-style-type: none; padding: 0; margin: 0; max-height: 28vh; }
+@media screen and (min-height: 1100px) {
+    .ScrollList { max-height: 35vh; }
+}
+@media screen and (min-height: 1500px) {
+    .ScrollList { max-height: 40vh; }
+}
+@media screen and (min-width: 1200px) and (orientation: landscape) {
+    .ScrollList.long { max-height: 50vh; }
+}
+.ScrollList li { font-size: 4vh; letter-spacing: 3px; list-style: none; padding: 1%; color: #222; transition: background-color 2s; }
+.ScrollList li:nth-child(even) { background-color : lightskyblue; }
+.ScrollList li:nth-child(odd) { background-color: #fff; }    
+.ScrollList li.found { background-color: #ffdf55; }
+.ScrollList .backspan { display: none; }
+.ScrollList li.selected .backspan { display: inline; }
+.ScrollWindow li.filler { display: none; }
+.ScrollWindow li.extra-filler { display: none; }
+.ScrollWindow.selected li.selected { background-color : lightskyblue; color: black; font-weight: bold; }             
+.ScrollWindow.selected li.empty { display: none; }
+.ScrollWindow.selected li.filler { background-color : transparent; display: list-item; }
+@media screen and (min-width: 800px) { 
+    .ScrollWindow.selected li.extra-filler { background-color : transparent; display: list-item; }
+}
+li.invalid { font-style: italic; color: #888; }
+.ScrollButton { border: 0; border-radius: 6px; width: 30%; transition: background-color 0.125s;
+                background-color: #ccc; text-align: center; cursor: pointer; }
+.ScrollButton.tapped { background-color: lightskyblue; }

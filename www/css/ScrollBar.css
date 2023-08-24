@@ -1,0 +1,9 @@
+/*******************************************************************************
+* COPYRIGHT (C) 726 TECHNOLOGY INC, 2017 - 2023            ALL RIGHTS RESERVED *
+*******************************************************************************/
+/* SCROLL BAR */
+::-webkit-scrollbar { width: 20px; }
+::-webkit-scrollbar-corner { background: #5558; }
+::-webkit-scrollbar-track { background: #5558; }
+::-webkit-scrollbar-thumb { background: #bfbfbf; height: 20px; }
+::-webkit-scrollbar-thumb:hover { background: #cfcfcf; }
